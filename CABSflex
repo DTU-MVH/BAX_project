@@ -1,0 +1,4 @@
+# Bash command used for CABSflex ensamble creation
+
+#for the 4S0O_alphafold.pdb structure
+CABSflex -i 4S0O_alphafold.pdb -k 10 -y 100 -a 20 -v 4 -z 10 -A
