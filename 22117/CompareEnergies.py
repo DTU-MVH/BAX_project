@@ -17,9 +17,9 @@ print(df_4S0O.columns)
 
 df_diff = pd.DataFrame()
 for res in range(192):
-    if res in range(10):
-        print(df_4S0O[res].subtract(df_2K7W[res+20], fill_value=0.0))
-    df_diff = pd.concat([df_diff, df_4S0O[res].subtract(df_2K7W[res+20], fill_value=0.0)], axis=1)
+    """if res in range(10):
+        print(df_2K7W[res+20].subtract(df_4S0O[res], fill_value=0.0))"""
+    df_diff = pd.concat([df_diff, df_2K7W[res+20].subtract(df_4S0O[res], fill_value=0.0)], axis=1)
 
 new_columns = [str(i) for i in range(192)]
 df_diff.columns = new_columns
