@@ -1,0 +1,7 @@
+#Used to merge pdb ensemle files together to run easier with MutateX
+ls -d model_* | xargs /home/ctools/anaconda3_2021.11/bin/pdb_merge | /home/ctools/anaconda3_2021.11/bin/pdb_tidy > merged_pdb.pdb
+
+#Description: 
+#ls -d model_* returns the list of all file names starting with "model_". This is then fed pdb_merge using a pipe, xargs is achieving 
+#the right input format (output from prior command is given as arguments rather than stdin). pdb_tidy then runs to clean up the files 
+#(suggested in pdb_merge -h. Lastly the output is saved in merged_pdb.pdb
