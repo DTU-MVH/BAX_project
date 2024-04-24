@@ -14,3 +14,10 @@ tail -f nohup.out
 
 # This creates the file "energies.csv" which can be downloaded locally using scp:
 scp [login]@pupil5.healthtech.dtu.dk:/home/projects/22117_proteins/projects/group15/mutateX_[pdb]/energies.csv ./energies_[pdb].csv
+
+
+### MutateX on local interactions ###
+nohup mutatex [pdb file path] -p 32 -m /home/projects/22117_proteins/projects/group15/mutation_list.txt -x /home/ctools/foldx5_2024/foldx -f suite5 -R /home/projects/22117_proteins/projects/group15/repair_runfile_template.txt -M /home/projects/22117_proteins/projects/group15/mutate_runfile_template.txt -L -l -v -C deep -B -I /home/projects/22117_proteins/projects/group15/interface_runfile_template.txt &
+
+# After the calculations, the result files were aggregated using ddg2excel with the below command as template
+/home/ctools/anaconda3_2021.11/bin/ddg2excel -p [pdb file path] -l /home/projects/22117_proteins/projects/group15/mutation_list.txt -d results/interface_ddgs/final_averages/B-D/ -F csv
