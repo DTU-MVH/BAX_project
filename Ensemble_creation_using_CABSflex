@@ -1,0 +1,8 @@
+# Bash command used for CABSflex ensemble creation
+
+#for the 4S0O_alphafold.pdb structure
+CABSFlex -i 4S0O_alphafold.pdb -k 10 -y 100 -a 20 -v 4 -z 10 -A
+
+#same settings was used for the mutations
+
+#To read about the settings visit CABSFlex -h or the CABSFlex documentation.
