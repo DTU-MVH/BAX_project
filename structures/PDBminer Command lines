@@ -1,0 +1,3 @@
+/home/ctools/PDBminer/PDBminer -u Q07812 -2 4 -f csv 
+results/Q07812/Q07812_all.csv 
+scp s204557@pupil5.healthtech.dtu.dk:/home/projects/22117_proteins/lecture5_exercise/group15/results/Q07812/Q07812_all.csv s204557@pupil5.healthtech.dtu.dk:/home/projects/22117_proteins/projects/group15
