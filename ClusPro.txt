@@ -1,0 +1,26 @@
+# This file contains the settings of ClusPro runs to generate an active BAX homo-dimer. For each run 30 different structures was generated.
+
+# 1st run
+Ran the standard ClusPro docking with the AF-Q07812-F1 structure as the receptor and the ligand. No advanced settings.
+
+
+# 2nd run
+Ran the standard ClusPro docking with the AF-Q07812-F1 structure as the receptor and the ligand. 
+
+Advanced Options
+
+Receptor Attraction	a-53 a-54 a-55 a-56 a-57 a-58 a-59 a-60 a-61 a-62 a-63 a-64 a-65 a-66 a-67 a-68 a-69 a-70 a-71 a-72 a-73
+Ligand Attraction	a-53 a-54 a-55 a-56 a-57 a-58 a-59 a-60 a-61 a-62 a-63 a-64 a-65 a-66 a-67 a-68 a-69 a-70 a-71 a-72 a-73
+
+
+# 3rd run
+Ran the standard ClusPro docking with the AF-Q07812-F1 structure as the receptor and the ligand.
+
+Advanced Options
+
+Receptor Attraction	a-43 a-44 a-45
+Ligand Attraction	a-43 a-44 a-45
+Receptor Repulsion	a-150 a-151 a-152 a-153 a-154 a-155 a-156 a-157 a-158 a-159 a-160 a-161 a-162 a-163 a-164 a-165
+Ligand Repulsion	a-150 a-151 a-152 a-153 a-154 a-155 a-156 a-157 a-158 a-159 a-160 a-161 a-162 a-163 a-164 a-165
+
+
